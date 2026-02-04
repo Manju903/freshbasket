@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshBasket | Premium Organic Store</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="#" class="nav-btn">Home</a>
+            <a href="#" class="nav-btn">Category</a>
+            <div class="search-container">
+                <input type="text" placeholder="Search for veggies, fruits...">
+                <button>🔍</button>
+            </div>
+            <a href="#" class="icon-btn">👤</a> <a href="#" class="icon-btn">🛒</a> </div>
+        <div class="nav-right">
+            <h1 class="royal-logo">FreshBasket</h1>
+        </div>
+    </nav>
+
+    <section class="category-strip">
+        <div class="cat-item">🍎<span>Fruits</span></div>
+        <div class="cat-item">🥦<span>Vegetables</span></div>
+        <div class="cat-item">🍞<span>Bakery</span></div>
+        <div class="cat-item">🥛<span>Dairy</span></div>
+    </section>
+
+    <section class="slider">
+        <div class="slides">
+            <div class="slide active" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1610348725531-843dff563e2c?auto=format&fit=crop&w=1200&q=80');">
+                <div class="slide-content">
+                    <h2>Freshest Veggies Here For You</h2>
+                    <button class="shop-now">Shop Now</button>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section class="product-section">
+        <div class="section-header">
+            <h3>New Arrivals</h3>
+            <button class="view-all">View All</button>
+        </div>
+        <div class="product-flex">
+            <div class="product-card">
+                <div class="product-img">🥦</div>
+                <h4>Organic Broccoli</h4>
+                <p class="cat-label">Vegetables</p>
+                <div class="price-row">
+                    <span class="price">₹80</span>
+                    <button class="add-btn">+</button>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    </body>
+</html>

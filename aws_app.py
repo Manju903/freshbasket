@@ -40,6 +40,8 @@ class Order(db.Model):
     date = db.Column(db.DateTime, default=datetime.utcnow)
     items_json = db.Column(db.Text)
 
+SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:221082197973:freshbasket'
+
 # --- INITIALIZE DATABASE ---
 with app.app_context():
     db.create_all()
@@ -230,4 +232,5 @@ def logout(): session.clear(); return redirect(url_for('home'))
 # --- START SERVER ---
 if __name__ == '__main__':
     # Standard AWS Lab ports are 8080 or 5000
+
     app.run(host='0.0.0.0', port=8080)
